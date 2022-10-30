@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/light-texture-isolated-orange-red-flame-1062195-pxhere.com.jpg);
+    background-repeat: repeat;
+}
+
+.head {
+    position: fixed;
+    display: flex;
+    background-color: rgb(241, 165, 124);
+    width: 100vw;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: 14%;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav ul li {
+    font-weight: 500;
+    color: #231f20;
+    font-size: 20px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: aliceblue;
+}
+
+.contact {
+    margin-left: 10%;
+}
+
+.link_contact {
+    font-weight: 500;
+    color: #231f20;
+    font-size: 30px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    font-family: 'Smooch', cursive;
+}
+
+.items_contact {
+    position: absolute;
+    background-color: rgb(241, 165, 124);
+    text-align: center;
+    margin-left: -3%;
+    width: 200px;
+    height: 120px;
+    border-radius: 5px;
+    padding: 24px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateY(15px);
+}
+
+.items_contact a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #231f20;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+.contact:hover .items_contact {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.items_contact a:hover {
+    color: aliceblue;
+}
+
+.body {
+    text-align: center;
+    width: 100vw;
+}
+
+.banner {
+    padding-top: 50px;
+}
+
+.pano {
+    display: inline;
+}
