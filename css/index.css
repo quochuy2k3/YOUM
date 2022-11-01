@@ -7,6 +7,7 @@
 body {
     background-image: url(/img/light-texture-isolated-orange-red-flame-1062195-pxhere.com.jpg);
     background-repeat: repeat;
+    overflow-x: hidden;
 }
 
 .head {
@@ -16,6 +17,7 @@ body {
     width: 100vw;
     padding: 5px 0;
     align-items: center;
+    z-index: 99999;
 }
 
 .logo {
@@ -105,10 +107,250 @@ nav ul li a:hover {
     width: 100vw;
 }
 
-.banner {
-    padding-top: 50px;
+.pano:hover {
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
 }
 
 .pano {
     display: inline;
+    position: relative;
+    cursor: pointer;
+}
+
+.task {
+    margin-top: 30px;
+}
+
+.task a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #231f20;
+    font-size: 20px;
+    margin: 0 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: rgb(241, 165, 124);
+}
+
+.break {
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.break img {
+    width: 1200px;
+    cursor: pointer;
+}
+
+.break:hover {
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 0px;
+        top: 10px;
+    }
+    50% {
+        left: 0px;
+        top: -10px;
+    }
+    75% {
+        left: 0px;
+        top: 10px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.p1 .p1l {
+    width: 30%;
+    margin: 0 40px;
+}
+
+.p1 .p1r {
+    width: 30%;
+    margin: 0 40px;
+}
+
+.p1 .p1last {
+    width: 64%;
+    margin: 30px 30px;
+}
+
+.p1 div p {
+    text-align: left;
+    color: #ece4e6;
+    font-size: 20px;
+    width: 100%;
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.p2 .p2l {
+    width: 40%;
+}
+
+.p2 .p2r {
+    width: 30%;
+}
+
+.p2l img {
+    position: relative;
+    width: 650px;
+    margin-left: -100px;
+    cursor: pointer;
+}
+
+.p2l:hover img {
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+.p2r p {
+    text-align: left;
+    color: #ece4e6;
+    font-size: 20px;
+}
+
+.jd {
+    background-color: rgb(241, 165, 124);
+    text-align: left;
+    margin: 0 25%;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.jd h1,
+p {
+    color: #676464;
+    font-size: 20px;
+}
+
+.breakimg {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.breakimg:hover {
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+.breakimg img {
+    width: 1200px;
+}
+
+.t1 {
+    text-align: left;
+    margin: 0 30%;
+}
+
+.t1 p {
+    color: #41e6d0;
+    font-size: 27px;
+}
+
+span {
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 23px;
+    background-color: rgb(241, 165, 124);
+}
+
+.infoTeam {
+    width: 50%;
+    text-align: right;
+}
+
+.infoTeam img {
+    width: 1200px;
+}
+
+.Team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.Team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: -20%;
+}
+
+.Team .imgTeam {
+    width: 50%;
+}
+
+.Team .scripTeam {
+    width: 23%;
+}
+
+.imgTeam img {
+    width: 800px;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgTeam img:hover {
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+.scripTeam p {
+    text-align: left;
+    color: #ece4e6;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.p2r {
+    text-align: left;
+}
+
+.p2r a {
+    width: fit-content;
+    display: block;
+    padding: 8px 25px;
+    margin: 20px 0;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgb(241, 165, 124);
+    transition: all 0.3s;
+}
+
+.p2r a:hover {
+    color: #333;
+    scale: 1.1;
 }
