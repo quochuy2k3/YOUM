@@ -107,6 +107,10 @@ nav ul li a:hover {
     width: 100vw;
 }
 
+.banner {
+    padding-top: 30px;
+}
+
 .pano:hover {
     animation: myfirst 5s infinite;
     animation-direction: alternate;
@@ -413,6 +417,16 @@ span {
 #cancle {
     margin-top: 50px;
     margin-left: 40%;
+}
+
+@media screen and (max-width:1350px) {
+    .logo {
+        display: inline-block;
+        margin-left: 10%;
+    }
+    .contact {
+        margin-left: 6%;
+    }
 }
 
 @media screen and (max-width:1000px) {
