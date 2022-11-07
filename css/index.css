@@ -295,14 +295,7 @@ span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.Team {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: -20%;
 }
 
@@ -353,4 +346,153 @@ span {
 .p2r a:hover {
     color: #333;
     scale: 1.1;
+}
+
+.bar {
+    height: fit-content;
+    display: none;
+}
+
+.bar i {
+    color: #eb5f2a;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    a {
+        font-size: 12px !important;
+    }
+    p {
+        font-size: 12px !important;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    body {
+        width: 100vw;
+    }
+    .head {
+        justify-content: space-around;
+    }
+    nav {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    .bar {
+        display: block;
+        margin-left: 50%;
+    }
+    .banner img {
+        margin-top: 15%;
+        width: 100vw;
+    }
+    .pano img {
+        width: 100vw;
+    }
+    .task {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .task a {
+        padding: 10px 40px;
+        margin: 20px;
+    }
+    .break img {
+        width: 400px;
+    }
+    .p1 div {
+        width: 100% !important;
+    }
+    .p1 .p1l {
+        margin: 10px 40px;
+    }
+    .p1 .p1r {
+        margin: 10px 40px;
+    }
+    .p1 .p1last {
+        margin: 10px 40px;
+    }
+    .p1 div p {
+        text-align: left;
+        color: #ece4e6;
+        font-size: 20px;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p2 .p2l {
+        width: 100%;
+    }
+    .p2 .p2r {
+        width: 100%;
+        margin: 40px
+    }
+    .p2l img {
+        position: relative;
+        width: 450px;
+        margin-left: -100px;
+        cursor: pointer;
+    }
+    .p2 .p2r a {
+        text-align: center;
+    }
+    .jd {
+        margin: 5%;
+        padding: 25px !important;
+        border-radius: 40px;
+    }
+    .jd h1,
+    p {
+        color: #a06464;
+        font-size: 12px;
+    }
+    .breakimg {
+        margin: 40px 0;
+    }
+    .breakimg img {
+        width: 450px;
+    }
+    .t1 {
+        margin: 0 15%;
+    }
+    #fake {}
+    span {
+        border-radius: 10px;
+        font-size: 14px;
+        background-color: rgb(241, 165, 124);
+    }
+    #cocau img {
+        width: 400px;
+    }
+    .infoTeam {
+        width: 100%;
+    }
+    .infoTeam img {
+        width: 400px;
+    }
+    .Team {
+        margin-top: 100px;
+    }
+    .Team .imgTeam {
+        width: 30%;
+        padding-right: 200px;
+    }
+    .Team .scripTeam {
+        width: 38%;
+        margin-right: -6%;
+    }
+    .imgTeam img {
+        width: 150px;
+        position: relative;
+        cursor: pointer;
+    }
 }
