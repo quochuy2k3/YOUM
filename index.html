@@ -53,6 +53,28 @@
         <div class="bar" onclick="showNavPhone()">
             <i class="fas fa-bars"></i>
         </div>
+        <div class="nav-phone" id="nav-phone">
+            <div class="right">
+                <p class="pnav">
+                    FRANCI | THROUGH THE RULES 2022
+                </p>
+                <ul>
+                    <li class="home">
+                        <a href="http://">Trang chủ</a>
+                    </li>
+                    <li class="link_digital">
+                        <a href="/html/digital.html" target="_blank">Đề bài ban Digital</a>
+                    </li>
+                    <li class="link_content">
+                        <a href="/html/content.html" target="_blank">Đề bài ban Content</a>
+                    </li>
+                    <li class="link_event">
+                        <a href="/html/event.html" target="_blank">Đề bài ban Event</a>
+                    </li>
+                </ul>
+                <div id="cancle" onclick="hide()"> <img src="/img/icons8-cancel-50.png"> </div>
+            </div>
+        </div>
     </div>
     <div class="body">
         <div class="banner">
@@ -292,6 +314,22 @@
             </div>
         </div>
     </div>
+    <script>
+        function showNavPhone() {
+            // scope
+            // DOM
+            document.getElementById("nav-phone").style.transform = "none";
+            document.getElementById("nav-phone").style.animation = "none";
+        }
+    </script>
+    <script>
+        function hide() {
+            // scope
+            // DOM
+            document.getElementById("nav-phone").style.transform = "translateX(200%)";
+
+        }
+    </script>
 </body>
 
 </html>

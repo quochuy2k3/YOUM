@@ -359,6 +359,62 @@ span {
     cursor: pointer;
 }
 
+.nav-phone {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    ;
+    color: #fff;
+    transform: translateX(200%);
+    transition: all 0.3s;
+    text-align: right;
+}
+
+.nav-phone div {
+    opacity: 1!important;
+    margin-left: 30%;
+    height: 100%;
+    background-color: #333;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
+}
+
+.pnav {
+    font-size: 20px !important;
+    padding: 20px !important;
+}
+
+.nav-phone div ul {
+    margin-top: 40px;
+}
+
+.nav-phone div ul li {
+    border-bottom: 1px solid black;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
+    padding: 12px!important;
+}
+
+.nav-phone div ul li a {
+    text-decoration: none;
+    padding: 30px;
+    font-weight: 500;
+    font-size: 16px !important;
+    font-family: Arial;
+    color: #fff;
+}
+
+#cancle {
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
 @media screen and (max-width:1000px) {
     a {
         font-size: 12px !important;
